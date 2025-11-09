@@ -1,0 +1,29 @@
+name: Feature Story
+description: 垂直スライス（画面＋API）で実装する機能用
+title: "[FEAT] "
+labels: ["feature"]
+body:
+  - type: input
+    id: figma
+    attributes:
+      label: Figmaリンク
+      placeholder: "https://www.figma.com/..."
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: 箇条書きで（テスト／操作／バリデーション／API連携など）
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Frontend要件
+      description: "「ここまでできていればOK」という観点を箇条書きで。例：デザインとレイアウトがFigma通り／必須項目のバリデーションが動作／APIエラー時にエラーメッセージ表示、など。"
+  - type: textarea
+    id: backend
+    attributes:
+      label: Backend要件
+      description: 必要なAPI/エンドポイント/DB変更を記載
+  - type: textarea
+    id: notes
+    attributes:
+      label: 備考
