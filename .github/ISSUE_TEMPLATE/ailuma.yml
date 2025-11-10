@@ -1,5 +1,5 @@
 name: Feature Story
-description: 垂直スライス（画面＋API）で実装する機能用
+description: FrontendとBackendで実装する機能用
 title: "[FEAT] "
 labels: ["feature"]
 body:
@@ -8,22 +8,38 @@ body:
     attributes:
       label: Figmaリンク
       placeholder: "https://www.figma.com/..."
+    validations:
+      required: true
+
   - type: textarea
     id: acceptance
     attributes:
       label: Acceptance Criteria
       description: 箇条書きで（テスト／操作／バリデーション／API連携など）
+      placeholder: "- ユーザーは◯◯できる\n- エラー時は◯◯を表示"
+    validations:
+      required: true
+
   - type: textarea
-    id: acceptance
+    id: frontend_requirements
     attributes:
       label: Frontend要件
-      description: "「ここまでできていればOK」という観点を箇条書きで。例：デザインとレイアウトがFigma通り／必須項目のバリデーションが動作／APIエラー時にエラーメッセージ表示、など。"
+      description: "「ここまでできていればOK」を箇条書きで。例：Figma準拠／必須項目のバリデーション／APIエラー時のメッセージ表示 等"
+      placeholder: "- デザインがFigmaに準拠\n- 必須項目のバリデーション実装\n- APIエラー時のトースト表示"
+    validations:
+      required: true
+
   - type: textarea
-    id: backend
+    id: backend_requirements
     attributes:
       label: Backend要件
       description: 必要なAPI/エンドポイント/DB変更を記載
+      placeholder: "- GET /items\n- POST /items\n- DB: itemsテーブルにstatus列追加"
+    validations:
+      required: false
+
   - type: textarea
     id: notes
     attributes:
       label: 備考
+      placeholder: "補足事項や関連Issue、参考資料など"
